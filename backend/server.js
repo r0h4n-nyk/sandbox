@@ -2,26 +2,16 @@
  * server.js
  * ---------
  * Entry point for the attack dashboard backend.
- *
- * Responsibilities:
- *   - Serve an Express HTTP server with CORS and a /health endpoint.
- *   - Run a WebSocket server (ws) on the same port.
- *   - Maintain the set of connected dashboard clients.
- *   - Subscribe to "attack_event" on the event bus and broadcast each
- *     event as a JSON string to every live client.
- *   - Boot the parser (tail-file watcher) so log monitoring starts
- *     automatically on server launch.
- *
- * Port: 3000 (override with PORT env var)
  */
 
 const http    = require("http");
 const express = require("express");
 const cors    = require("cors");
+const path    = require("path"); // Added for file paths
 const { WebSocketServer } = require("ws");
 
 const eventBus        = require("./eventBus.js");
-const { startParser } = require("./parser.js");   // <-- starts the log watcher
+const { startParser } = require("./parser.js");
 
 const PORT = process.env.PORT || 3000;
 
@@ -31,18 +21,30 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-// Allow all origins so the React dashboard can connect from any host.
 app.use(cors());
-
-// Parse JSON request bodies (useful for future REST endpoints).
 app.use(express.json());
 
 /**
  * GET /health
- * Simple liveness check used by load balancers / monitoring tools.
  */
 app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
+});
+
+// ---------------------------------------------------------------------------
+// SERVE FRONTEND (The missing piece)
+// ---------------------------------------------------------------------------
+
+// Since server.js is in /backend, we go up one level to find /dist
+const distPath = path.join(__dirname, "..", "dist");
+
+// 1. Serve static files (js, css, images)
+app.use(express.static(distPath));
+
+// 2. Handle SPA routing (redirect all other GETs to index.html)
+// This ensures that if you refresh the page on a sub-route, it won't 404.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(distPath, "index.html"));
 });
 
 // ---------------------------------------------------------------------------
@@ -56,33 +58,20 @@ const server = http.createServer(app);
 // ---------------------------------------------------------------------------
 
 const wss = new WebSocketServer({ server });
-
-/**
- * Active client set.
- * Using a Set allows O(1) add/delete and easy iteration for broadcasts.
- */
 const clients = new Set();
 
 wss.on("connection", (ws, req) => {
   const clientIp = req.socket.remoteAddress;
-
-  // Track the new client.
   clients.add(ws);
-  console.log(
-    `[ws] WebSocket client connected: ${clientIp} — total clients: ${clients.size}`
-  );
+  console.log(`[ws] Connected: ${clientIp} — Total: ${clients.size}`);
 
-  // ── Client disconnect ───────────────────────────────────────────────────
   ws.on("close", () => {
     clients.delete(ws);
-    console.log(
-      `[ws] WebSocket client disconnected: ${clientIp} — total clients: ${clients.size}`
-    );
+    console.log(`[ws] Disconnected: ${clientIp} — Total: ${clients.size}`);
   });
 
-  // ── Client-level errors — remove without crashing the server ───────────
   ws.on("error", (err) => {
-    console.error(`[ws] Client error (${clientIp}):`, err.message);
+    console.error(`[ws] Error (${clientIp}):`, err.message);
     clients.delete(ws);
   });
 });
@@ -91,19 +80,9 @@ wss.on("connection", (ws, req) => {
 // Broadcast attack events
 // ---------------------------------------------------------------------------
 
-/**
- * Whenever the parser validates a new event, broadcast it as a JSON string
- * to every currently connected WebSocket client.
- *
- * Clients that have closed between the last check and now are silently
- * skipped — readyState guards against mid-broadcast disconnects.
- */
 eventBus.on("attack_event", (event) => {
-  // Skip serialization entirely if nobody is listening.
   if (clients.size === 0) return;
-
   const payload = JSON.stringify(event);
-
   for (const ws of clients) {
     if (ws.readyState === ws.OPEN) {
       ws.send(payload);
@@ -116,8 +95,7 @@ eventBus.on("attack_event", (event) => {
 // ---------------------------------------------------------------------------
 
 server.listen(PORT, () => {
-  console.log(`[server] Attack dashboard backend running on port ${PORT}`);
-  // Boot the log watcher — must come after the event bus listener above
-  // so no events are missed between startup and the first broadcast.
+  console.log(`[server] Running on port ${PORT}`);
+  console.log(`[server] Serving static files from: ${distPath}`);
   startParser();
 });
