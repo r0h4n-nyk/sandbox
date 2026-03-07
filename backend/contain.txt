@@ -1,0 +1,57 @@
+time stamp
+src ip
+input
+event id (login, command)
+- login then : username, password will have value.
+session id
+
+
+response {
+    tactic
+    techniques [
+        mitigations [
+            id
+            name
+            description
+        ]
+    ]
+}
+
+AI response
+- persona classification
+- summary
+
+geolocation api
+
+
+
+key exchange log - big
+
+
+{
+  "time stamp": "2023-10-27T10:00:05Z",
+  "src ip": "192.168.1.50",
+  "event id": "event.cowrie.login",
+  "session id": "session_999",
+  "input": null,
+  "user": "root",
+  "password": "password123",
+  "response": {
+    "tactic": "Initial Access",
+    "techniques": [
+      {
+        "mitigations": [
+          {"id": "M1036", "name": "Account Use Policies", "description": "Limit the use of default accounts."}
+        ]
+      }
+    ]
+  }
+  "ai_response": {
+    "summary": {
+        "The attacker is attempting to gain unauthorized access to a system by utilizing a brute-force attack with a known username 'root' and a weak password 'password123', aiming to exploit the lack of strong authentication policies. This attack aligns with the Initial Access tactic, seeking to bypass security controls and establish a foothold on the system. The goal is to achieve elevated privileges through unauthorized login."
+    }
+    "persona": {
+      "this value can be Human or bot or cant decide. decides based on command frequency pattern matching, repeated same commands"
+    }
+  }
+}
