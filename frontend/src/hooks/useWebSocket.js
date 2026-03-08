@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 // Config
 // ─────────────────────────────────────────────────────────────────────────────
 
-const WS_URL            = import.meta.env.VITE_WS_URL ?? 'ws://localhost:3000'
+const WS_URL            = "ws://20.193.253.188"
 const MAX_EVENTS        = 1000
 const RECONNECT_BASE_MS = 1_000
 const RECONNECT_MAX_MS  = 30_000

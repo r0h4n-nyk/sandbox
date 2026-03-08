@@ -212,31 +212,6 @@ export default function STIXExportPanel({ events }) {
             </div>
           </div>
         </div>
-
-        {/* Bundle preview */}
-        <div className="pt-4 border-t border-gray-800">
-          <div className="section-label mb-1.5">BUNDLE PREVIEW</div>
-          <div
-            className="font-mono text-xs p-2 rounded border overflow-x-auto"
-            style={{
-              background: 'rgba(0,0,0,0.4)',
-              borderColor: '#1f2937',
-              color: '#4b5563',
-              maxHeight: 80,
-              overflowY: 'hidden',
-            }}
-          >
-            <span style={{ color: '#8b5cf6' }}>{'{'}</span>
-            <br />
-            {'  '}<span style={{ color: '#06b6d4' }}>"type"</span>: <span style={{ color: '#00ff9c' }}>"bundle"</span>,
-            <br />
-            {'  '}<span style={{ color: '#06b6d4' }}>"spec_version"</span>: <span style={{ color: '#00ff9c' }}>"2.1"</span>,
-            <br />
-            {'  '}<span style={{ color: '#06b6d4' }}>"objects"</span>: [<span style={{ color: '#eab308' }}>{bundle.objects?.length || 0} objects</span>]
-            <br />
-            <span style={{ color: '#8b5cf6' }}>{'}'}</span>
-          </div>
-        </div>
       </div>
     </div>
   )

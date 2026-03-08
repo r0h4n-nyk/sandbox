@@ -43,7 +43,7 @@ app.use(express.static(distPath));
 
 // 2. Handle SPA routing (redirect all other GETs to index.html)
 // This ensures that if you refresh the page on a sub-route, it won't 404.
-app.get("*", (req, res) => {
+app.get("/{*path}", (req, res) => {
   res.sendFile(path.join(distPath, "index.html"));
 });
 
