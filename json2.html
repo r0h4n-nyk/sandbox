@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowrie Session Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 { color: #569cd6; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .container { max-width: 1200px; margin: auto; }
+        .upload-section { margin-bottom: 30px; background: #252526; padding: 20px; border-radius: 8px; display: flex; align-items: center; }
+        input[type="file"] { color: #d4d4d4; margin-left: 10px; }
+        
+        /* Table Styles */
+        .table-container { max-height: 400px; overflow-y: auto; margin-bottom: 30px; border: 1px solid #333; }
+        table { width: 100%; border-collapse: collapse; background: #252526; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #3c3c3c; }
+        th { background-color: #333333; color: #4ec9b0; position: sticky; top: 0; z-index: 1; }
+        tr:hover { background-color: #2a2d2e; }
+        
+        /* Utility Classes */
+        .success { color: #b5cea8; }
+        .failed { color: #f48771; }
+        .command { font-family: monospace; color: #ce9178; }
+        .btn { 
+            background-color: #0e639c; color: white; border: none; 
+            padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold;
+        }
+        .btn:hover { background-color: #1177bb; }
+        .btn-export { background-color: #007acc; margin-left: auto; display: none; }
+        .btn-export:hover { background-color: #0098ff; }
+        
+        #sessionDetailsSection { display: none; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cowrie Session Analyzer</h1>
+    
+    <div class="upload-section">
+        <label for="logFile"><strong>Upload cowrie.json: </strong></label>
+        <input type="file" id="logFile" accept=".json">
+        <button id="exportBtn" class="btn btn-export" onclick="exportToJson()">💾 Export Clean JSON</button>
+    </div>
+
+    <h2>Discovered Sessions</h2>
+    <div class="table-container">
+        <table id="sessionsTable">
+            <thead>
+                <tr>
+                    <th>Session ID</th>
+                    <th>Source IP</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Events</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="6">No data loaded.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="sessionDetailsSection">
+        <h2 id="sessionDetailsTitle">Session Details</h2>
+        <div class="table-container" style="max-height: 600px;">
+            <table id="timelineTable">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Event ID</th>
+                        <th>Specific Details</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    let sessionsData = {};
+
+    document.getElementById('logFile').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            parseCowrieLogs(e.target.result);
+        };
+        reader.readAsText(file);
+    });
+
+    function parseCowrieLogs(data) {
+        const lines = data.split('\n');
+        sessionsData = {}; 
+
+        lines.forEach(line => {
+            if (!line.trim()) return; 
+
+            try {
+                const log = JSON.parse(line);
+                const sessionId = log.session;
+                
+                if (!sessionId) return;
+
+                if (!sessionsData[sessionId]) {
+                    sessionsData[sessionId] = {
+                        id: sessionId,
+                        src_ip: log.src_ip || log['src ip'] || 'Unknown',
+                        startTime: log.timestamp || log['time stamp'],
+                        endTime: log.timestamp || log['time stamp'], 
+                        events: []
+                    };
+                }
+
+                sessionsData[sessionId].events.push(log);
+                
+                if (log.timestamp || log['time stamp']) {
+                    sessionsData[sessionId].endTime = log.timestamp || log['time stamp'];
+                }
+
+            } catch (err) {
+                console.error("Error parsing JSON line:", err);
+            }
+        });
+
+        renderSessionsTable();
+        
+        // Show the export button once data is successfully loaded
+        if (Object.keys(sessionsData).length > 0) {
+            document.getElementById('exportBtn').style.display = 'block';
+        }
+    }
+
+    function renderSessionsTable() {
+        const tbody = document.querySelector('#sessionsTable tbody');
+        tbody.innerHTML = '';
+
+        const sessionsArray = Object.values(sessionsData);
+        
+        if (sessionsArray.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6">No valid sessions found in file.</td></tr>';
+            return;
+        }
+
+        sessionsArray.sort((a, b) => new Date(b.startTime) - new Date(a.startTime));
+
+        sessionsArray.forEach(session => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${session.id}</td>
+                <td>${session.src_ip}</td>
+                <td>${session.startTime}</td>
+                <td>${session.endTime}</td>
+                <td>${session.events.length} logs</td>
+                <td><button class="btn" onclick="viewSession('${session.id}')">View Timeline</button></td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    window.viewSession = function(sessionId) {
+        const session = sessionsData[sessionId];
+        if (!session) return;
+
+        document.getElementById('sessionDetailsSection').style.display = 'block';
+        document.getElementById('sessionDetailsTitle').innerText = `Timeline: Session ${sessionId} (${session.src_ip})`;
+
+        const tbody = document.querySelector('#timelineTable tbody');
+        tbody.innerHTML = '';
+
+        session.events.forEach(log => {
+            const eventId = log.eventid || log['event id'] || 'Unknown Event';
+            const timestamp = log.timestamp || log['time stamp'] || 'No Time';
+            let detailsHtml = '-';
+            
+            if (eventId.includes('login.success') || eventId.includes('login.failed')) {
+                const user = log.username || log.user || 'N/A';
+                const pass = log.password || 'N/A';
+                const statusClass = eventId.includes('success') ? 'success' : 'failed';
+                detailsHtml = `User: <strong>${user}</strong> | Pass: <strong>${pass}</strong> <span class="${statusClass}">(${eventId.includes('success') ? 'Success' : 'Failed'})</span>`;
+            } 
+            else if (eventId.includes('command.input')) {
+                detailsHtml = `<span class="command">${log.input || 'No input recorded'}</span>`;
+            }
+            else if (eventId.includes('session.connect')) {
+                detailsHtml = `Connected via Protocol: ${log.protocol || 'Unknown'}`;
+            }
+            else if (eventId.includes('session.closed')) {
+                detailsHtml = `Session Duration: ${log.duration ? log.duration.toFixed(2) + 's' : 'Unknown'}`;
+            }
+            else if (eventId.includes('file_download')) {
+                detailsHtml = `Attempted download from: <span class="command">${log.url}</span>`;
+            }
+
+            tbody.innerHTML += `
+                <tr>
+                    <td>${timestamp}</td>
+                    <td>${eventId}</td>
+                    <td>${detailsHtml}</td>
+                </tr>
+            `;
+        });
+        
+        document.getElementById('sessionDetailsSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // --- NEW EXPORT FUNCTIONALITY ---
+    window.exportToJson = function() {
+        const cleanExportData = [];
+
+        // Loop through our grouped sessions
+        Object.values(sessionsData).forEach(session => {
+            
+            // Build a clean timeline mapping only what we care about
+            const cleanTimeline = session.events.map(log => {
+                const eventId = log.eventid || log['event id'] || 'Unknown Event';
+                
+                // Base structure for every event
+                let cleanEvent = {
+                    timestamp: log.timestamp || log['time stamp'],
+                    action: eventId
+                };
+
+                // Add specific fields based on the action type
+                if (eventId.includes('login')) {
+                    cleanEvent.username = log.username || log.user;
+                    cleanEvent.password = log.password;
+                    cleanEvent.status = eventId.includes('success') ? 'Success' : 'Failed';
+                } 
+                else if (eventId.includes('command.input')) {
+                    cleanEvent.command = log.input;
+                }
+                else if (eventId.includes('file_download')) {
+                    cleanEvent.url = log.url;
+                    cleanEvent.outfile = log.outfile;
+                }
+                // (Notice how we completely ignore kex, params, macAlgs, etc.)
+                
+                return cleanEvent;
+            });
+
+            // Push the beautifully sanitized session into our export array
+            cleanExportData.push({
+                session_id: session.id,
+                source_ip: session.src_ip,
+                start_time: session.startTime,
+                end_time: session.endTime,
+                total_events: cleanTimeline.length,
+                timeline: cleanTimeline
+            });
+        });
+
+        // 1. Convert the array to a nicely formatted JSON string (2 spaces indentation)
+        const jsonString = JSON.stringify(cleanExportData, null, 2);
+        
+        // 2. Create a Blob (a file-like object of immutable, raw data)
+        const blob = new Blob([jsonString], { type: "application/json" });
+        
+        // 3. Create a temporary URL and a hidden <a> tag to trigger the download
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `cowrie_cleaned_sessions_${Date.now()}.json`; // Unique filename
+        
+        // 4. Click it, then clean it up
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+</body>
+</html>

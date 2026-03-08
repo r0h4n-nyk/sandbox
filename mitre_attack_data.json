@@ -1,0 +1,3029 @@
+[
+  {
+    "tactic": "Reconnaissance",
+    "techniques": [
+      {
+        "technique": "Active Scanning",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Gather Victim Host Information",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Gather Victim Identity Information",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Gather Victim Network Information",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Gather Victim Org Information",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Phishing for Information",
+        "mitigations": [
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Use anti-spoofing and email authentication mechanisms to filter messages based on validity checks of the sender domain (using SPF) and integrity of messages (using DKIM). Enabling these mechanisms within an organization (through policies such as DMARC) may enable recipients (intra-org and cross domain) to perform similar message filtering and validation.[17][18]"
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Users can be trained to identify social engineering techniques and spearphishing attempts."
+          }
+        ]
+      },
+      {
+        "technique": "Search Closed Sources",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Search Open Technical Databases",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls. Efforts should focus on minimizing the amount and sensitivity of data available to external parties."
+          }
+        ]
+      },
+      {
+        "technique": "Search Open Websites/Domains",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Application developers uploading to public code repositories should be careful to avoid publishing sensitive information such as credentials and API keys."
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Scan public code repositories for exposed credentials or other sensitive information before making commits. Ensure that any leaked credentials are removed from the commit history, not just the current latest version of the code."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Resource Development",
+    "techniques": [
+      {
+        "technique": "Acquire Infrastructure",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Compromise Accounts",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Compromise Infrastructure",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Develop Capabilities",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Establish Accounts",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Obtain Capabilities",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      },
+      {
+        "technique": "Stage Capabilities",
+        "mitigations": [
+          {
+            "id": "M1056",
+            "name": "Pre-compromise",
+            "description": "This technique cannot be easily mitigated with preventive controls since it is based on behaviors performed outside of the scope of enterprise defenses and controls."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Initial Access",
+    "techniques": [
+      {
+        "technique": "Phishing",
+        "mitigations": [
+          {
+            "id": "M1049",
+            "name": "Antivirus/Antimalware",
+            "description": "Anti-virus can automatically quarantine suspicious files."
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion prevention systems and systems designed to scan and remove malicious email attachments or links can be used to block activity."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Determine if certain websites or attachment types (ex: .scr, .exe, .pif, .cpl, etc.) that can be used for phishing are necessary for business operations and consider blocking access if activity cannot be monitored well or if it poses a significant risk."
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Use anti-spoofing and email authentication mechanisms to filter messages based on validity checks of the sender domain (using SPF) and integrity of messages (using DKIM). Enabling these mechanisms within an organization (through policies such as DMARC) may enable recipients (intra-org and cross domain) to perform similar message filtering and validation.[21][22]"
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Users can be trained to identify social engineering techniques and phishing emails."
+          }
+        ]
+      },
+      {
+        "technique": "Supply Chain Compromise",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Application developers should be cautious when selecting third-party libraries to integrate into their application. Additionally, where possible, developers should lock software dependencies to specific versions rather than pulling the latest version on build.[16]"
+          },
+          {
+            "id": "M1046",
+            "name": "Boot Integrity",
+            "description": "Use secure methods to boot a system and verify the integrity of the operating system and loading mechanisms."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Where possible, consider requiring developers to pull from internal repositories containing verified and approved packages rather than from external ones.[16]"
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "A patch management process should be implemented to check unused dependencies, unmaintained and/or previously vulnerable dependencies, unnecessary features, components, files, and documentation."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Implement robust user account management practices to limit permissions associated with software execution. Ensure that software runs with the lowest necessary privileges, avoiding the use of root or administrator accounts when possible. By restricting permissions, you can minimize the risk of propagation and unauthorized actions in the event of a supply chain compromise, reducing the attack surface for adversaries to exploit within compromised systems."
+          },
+          {
+            "id": "M1016",
+            "name": "Vulnerability Scanning",
+            "description": "Continuous monitoring of vulnerability sources and the use of automatic and manual code review tools should also be implemented as well.[17]"
+          }
+        ]
+      },
+      {
+        "technique": "Valid Accounts",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Use conditional access policies to block logins from non-compliant devices or from outside defined organization IP ranges.[94]"
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Disable legacy authentication, which does not support MFA, and require the use of modern authentication protocols instead."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Ensure that applications do not store sensitive data or credentials insecurely. (e.g. plaintext credentials in code, published credentials in repositories, or credentials in public cloud storage)."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Implement multi-factor authentication (MFA) across all account types, including default, local, domain, and cloud accounts, to prevent unauthorized access, even if credentials are compromised. MFA provides a critical layer of security by requiring multiple forms of verification beyond just a password. This measure significantly reduces the risk of adversaries abusing valid accounts to gain initial access, escalate privileges, maintain persistence, or evade defenses within your network."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Applications and appliances that utilize default username and password should be changed immediately after the installation, and before deployment to a production environment.[95] When possible, applications that use SSH keys should be updated periodically and properly secured.Policies should minimize (if not eliminate) reuse of passwords between different user accounts, especially employees using the same credentials for personal accounts that may not be defended by enterprise security resources."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [3] [96] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not been authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [97]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Regularly audit user accounts for activity and deactivate or remove any that are no longer needed."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Applications may send push notifications to verify a login as a form of multi-factor authentication (MFA). Train users to only accept valid push notifications and to report suspicious push notifications."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Execution",
+    "techniques": [
+      {
+        "technique": "Command and Scripting Interpreter",
+        "mitigations": [
+          {
+            "id": "M1049",
+            "name": "Antivirus/Antimalware",
+            "description": "Anti-virus can be used to automatically quarantine suspicious files."
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Inventory systems for unauthorized command and scripting interpreter installations."
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent Visual Basic and JavaScript scripts from executing potentially malicious downloaded content [57]."
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Where possible, only permit execution of signed scripts."
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable or remove any unnecessary or unused shells or interpreters."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Use application control where appropriate. For example, PowerShell Constrained Language mode can be used to restrict access to sensitive or otherwise dangerous language elements such as those used to execute arbitrary Windows APIs or files (e.g., Add-Type).[58]"
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Prevent user installation of unrequired command and scripting interpreters."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "When PowerShell is necessary, consider restricting PowerShell execution policy to administrators. Be aware that there are methods of bypassing the PowerShell execution policy, depending on environment configuration.[59]PowerShell JEA (Just Enough Administration) may also be used to sandbox administration and limit what commands admins/users can execute through remote PowerShell sessions.[60]"
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Script blocking extensions can help prevent the execution of scripts and HTA files that may commonly be used during the exploitation process. For malicious code served up through ads, adblockers can help prevent that code from executing in the first place."
+          }
+        ]
+      },
+      {
+        "technique": "Inter-Process Communication",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Enable the Hardened Runtime capability when developing applications. Do not include the com.apple.security.get-task-allow entitlement with the value set to any variation of true."
+          },
+          {
+            "id": "M1048",
+            "name": "Application Isolation and Sandboxing",
+            "description": "Ensure all COM alerts and Protected View are enabled.[20]"
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs.[21][22]"
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Registry keys specific to Microsoft Office feature control security can be set to disable automatic DDE/OLE execution. [23][24][25] Microsoft also created, and enabled by default, Registry keys to completely disable DDE execution in Word and Excel.[26]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Modify Registry settings (directly or using Dcomcnfg.exe) in HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\Classes\\\\AppID\\\\{AppID_GUID} associated with the process-wide security of individual COM applications.[27]Modify Registry settings (directly or using Dcomcnfg.exe) in HKEY_LOCAL_MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Ole associated with system-wide security defaults for all COM applications that do no set their own process-wide security.[28] [29]"
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Consider disabling embedded files in Office programs, such as OneNote, that do not work with Protected View.[22][25]"
+          }
+        ]
+      },
+      {
+        "technique": "Scheduled Task/Job",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for permission weaknesses in scheduled tasks that could be used to escalate privileges. [4]"
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Configure settings for scheduled tasks to force tasks to run under the context of the authenticated account instead of allowing them to run as SYSTEM. The associated Registry key is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\SubmitControl. The setting can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > Security Options: Domain Controller: Allow server operators to schedule tasks, set to disabled. [5]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Configure the Increase Scheduling Priority option to only allow the Administrators group the rights to schedule a priority process. This can be can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Increase scheduling priority. [6]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict access by setting directory and file permissions that are not specific to users or privileged accounts."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create scheduled tasks on remote systems."
+          }
+        ]
+      },
+      {
+        "technique": "System Services",
+        "mitigations": [
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to block processes created by PsExec from running. [1]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Ensure that permissions disallow services that run at a higher permissions level from being created or interacted with by a user with a lower permission level."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Ensure that high permission level service binaries cannot be replaced or modified by users with a lower permission level."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Prevent users from installing their own launch agents or launch daemons."
+          }
+        ]
+      },
+      {
+        "technique": "User Execution",
+        "mitigations": [
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent executable files from running unless they meet a prevalence, age, or trusted list criteria and to prevent Office applications from creating potentially malicious executable content by blocking malicious code from being written to disk. Note: cloud-delivered protection must be enabled to use certain rules. [13]"
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Application control may be able to prevent the running of executables masquerading as other files."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Where possible, consider requiring developers to pull from internal repositories containing verified and approved packages rather than from external ones."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "If a link is being visited by a user, network intrusion prevention systems and systems designed to scan and remove malicious downloads can be used to block activity."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "If a link is being visited by a user, block unknown or unused files in transit by default that should not be downloaded or by policy from suspicious sites as a best practice to prevent some vectors, such as .scr, .exe, .pif, .cpl, etc. Some download scanning devices can open and analyze compressed and encrypted formats, such as zip and rar that may be used to conceal malicious files."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Use user training as a way to bring awareness to common phishing and spearphishing techniques and how to raise suspicion for potentially malicious events."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Persistence",
+    "techniques": [
+      {
+        "technique": "Account Manipulation",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Remove unnecessary and potentially abusable authentication and authorization mechanisms where possible."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication for user and privileged accounts."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Configure access controls and firewalls to limit access to critical systems and domain controllers. Most cloud environments support separate virtual private cloud (VPC) instances that enable further segmentation of cloud systems."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Protect domain controllers by ensuring proper security configuration for critical servers to limit access by potentially unnecessary protocols and services, such as SMB file sharing."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Do not allow domain administrator accounts to be used for day-to-day operations that may expose them to potential adversaries on unprivileged systems."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict access to potentially sensitive files that deal with authentication and/or authorization."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that low-privileged user accounts do not have permissions to modify accounts or account-related policies."
+          }
+        ]
+      },
+      {
+        "technique": "Boot or Logon Autostart Execution",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Boot or Logon Initialization Scripts",
+        "mitigations": [
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict write access to logon scripts to specific administrators."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys for logon scripts that may lead to persistence."
+          }
+        ]
+      },
+      {
+        "technique": "Create Account",
+        "mitigations": [
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication for user and privileged accounts."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Configure access controls and firewalls to limit access to domain controllers and systems used to create and manage accounts."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Protect domain controllers by ensuring proper security configuration for critical servers."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit the number of accounts with permissions to create other accounts. Do not allow domain administrator accounts to be used for day-to-day operations that may expose them to potential adversaries on unprivileged systems."
+          }
+        ]
+      },
+      {
+        "technique": "Create or Modify System Process",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Use auditing tools capable of detecting privilege and service abuse opportunities on systems within an enterprise and correct them."
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent an application from writing a signed vulnerable driver to the system.[10] On Windows 10 and 11, enable Microsoft Vulnerable Driver Blocklist to assist in hardening against third party-developed drivers.[11]"
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Enforce registration and execution of only legitimately signed service drivers where possible."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Restrict software installation to trusted repositories only and be cautious of orphaned software packages."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Ensure that Driver Signature Enforcement is enabled to restrict unsigned drivers from being installed."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict read/write access to system-level process files to only select privileged users who have a legitimate need to manage system services."
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Where possible, consider enforcing the use of container services in rootless mode to limit the possibility of privilege escalation or malicious effects on the host running the container."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with system-level process changes and service configurations."
+          }
+        ]
+      },
+      {
+        "technique": "Event Triggered Execution",
+        "mitigations": [
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk."
+          }
+        ]
+      },
+      {
+        "technique": "Hijack Execution Flow",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "When possible, include hash values in manifest files to help prevent side-loading of malicious libraries.[11]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Use auditing tools capable of detecting hijacking opportunities on systems within an enterprise and correct them. Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for hijacking weaknesses.[12]Use the program sxstrace.exe that is included with Windows along with manual inspection to check manifest files for side-loading vulnerabilities in software.Find and eliminate path interception weaknesses in program configuration files, scripts, the PATH environment variable, services, and in shortcuts by surrounding PATH variables with quotation marks when functions allow for them. Be aware of the search order Windows uses for executing or loading binaries and use fully qualified paths wherever appropriate.Clean up old Windows Registry keys when software is uninstalled to avoid keys with no associated legitimate binaries. Periodically search for and correct or report path interception weaknesses on systems that may have been introduced using custom or available tools that report software using insecure path configurations.[13][14][15]"
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Some endpoint security solutions can be configured to block some types of behaviors related to process injection/memory tampering based on common sequences of indicators (ex: execution of specific API functions)."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Adversaries may use new payloads to execute this technique. Identify and block potentially malicious software executed through hijacking by using application control solutions also capable of blocking libraries loaded by legitimate software."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Install software in write-protected locations. Set directory access controls to prevent file writes to the search paths for applications, both in the folders where applications are run from and the standard library folders."
+          },
+          {
+            "id": "M1044",
+            "name": "Restrict Library Loading",
+            "description": "Disallow loading of remote DLLs. This is included by default in Windows Server 2012+ and is available by patch for XP+ and Server 2003+.Enable Safe DLL Search Mode to force search for system DLLs in directories with greater restrictions (e.g. %SYSTEMROOT%)to be used before local directory DLLs (e.g. a user's home directory)The Safe DLL Search Mode can be enabled via Group Policy at Computer Configuration > [Policies] > Administrative Templates > MSS (Legacy): MSS: (SafeDllSearchMode) Enable Safe DLL search mode. The associated Windows Registry key for this is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\SafeDLLSearchMode[16][17]"
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys for system components that may lead to privilege escalation."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Update software regularly to include patches that fix DLL side-loading vulnerabilities."
+          },
+          {
+            "id": "M1052",
+            "name": "User Account Control",
+            "description": "Turn off UAC's privilege elevation for standard users [HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System] to automatically deny elevation requests, add: \"ConsentPromptBehaviorUser\"=dword:00000000. Consider enabling installer detection for all users by adding: \"EnableInstallerDetection\"=dword:00000001. This will prompt for a password for installation and also log the attempt. To disable installer detection, instead add: \"EnableInstallerDetection\"=dword:00000000. This may prevent potential elevation of privileges through exploitation during the process of UAC detecting the installer, but will allow the installation process to continue without being logged. [18]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with service changes and service binary target path locations. Deny execution from user directories such as file download directories and temp directories where able.Ensure that proper permissions and directory access control are set to deny users the ability to write files to the top-level directory C: and system directories, such as C:\\Windows\\, to reduce places where malicious files could be placed for execution."
+          }
+        ]
+      },
+      {
+        "technique": "Modify Authentication Process",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Review authentication logs to ensure that mechanisms such as enforcement of MFA are functioning as intended.Periodically review the hybrid identity solution in use for any discrepancies. For example, review all Pass Through Authentication (PTA) agents in the Azure Management Portal to identify any unwanted or unapproved ones.[6] If ADFS is in use, review DLLs and executable files in the AD FS and Global Assembly Cache directories to ensure that they are signed by Microsoft. Note that in some cases binaries may be catalog-signed, which may cause the file to appear unsigned when viewing file properties.[7]Periodically review for new and unknown network provider DLLs within the Registry (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\<NetworkProviderName>\\NetworkProvider\\ProviderPath). Ensure only valid network provider DLLs are registered. The name of these can be found in the Registry key at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order, and have corresponding service subkey pointing to a DLL at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentC ontrolSet\\Services\\<NetworkProviderName>\\NetworkProvider."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Integrating multi-factor authentication (MFA) as part of organizational policy can greatly reduce the risk of an adversary gaining control of valid credentials that may be used for additional tactics such as initial access, lateral movement, and collecting information. MFA can also be used to restrict access to cloud resources and APIs."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Ensure only valid password filters are registered. Filter DLLs must be present in Windows installation directory (C:\\Windows\\System32\\ by default) of a domain controller and/or local computer with a corresponding entry in HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Notification Packages. Starting in Windows 11 22H2, the EnableMPRNotifications policy can be disabled through Group Policy or through a configuration service provider to prevent Winlogon from sending credentials to network providers.[8]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Ensure that AllowReversiblePasswordEncryption property is set to disabled unless there are application requirements.[9]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [10] [11] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not be authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [12]Limit access to the root account and prevent users from modifying protected components through proper privilege separation (ex SELinux, grsecurity, AppArmor, etc.) and limiting Privilege Escalation opportunities.Limit on-premises accounts with access to the hybrid identity solution in place. For example, limit Azure AD Global Administrator accounts to only those required, and ensure that these are dedicated cloud-only accounts rather than hybrid ones.[7]"
+          },
+          {
+            "id": "M1025",
+            "name": "Privileged Process Integrity",
+            "description": "Enabled features, such as Protected Process Light (PPL), for LSA.[13]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict write access to the /Library/Security/SecurityAgentPlugins directory."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Restrict Registry permissions to disallow the modification of sensitive Registry keys such as HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that proper policies are implemented to dictate the the secure enrollment and deactivation of authentication mechanisms, such as MFA, for user accounts."
+          }
+        ]
+      },
+      {
+        "technique": "Office Application Startup",
+        "mitigations": [
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent Office applications from creating child processes and from writing potentially malicious executable content to disk. [6]"
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Follow Office macro security best practices suitable for your environment. Disable Office VBA macros from executing.Disable Office add-ins. If they are required, follow best practices for securing them by requiring them to be signed and disabling user notification for allowing add-ins. For some add-ins types (WLL, VBA) additional mitigation is likely required as disabling add-ins in the Office Trust Center does not disable WLL nor does it prevent VBA code from executing. [7]"
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "For the Office Test method, create the Registry key used to execute it and set the permissions to \"Read Control\" to prevent easy access to the key without administrator permissions or requiring Privilege Escalation. [8]"
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "For the Outlook methods, blocking macros may be ineffective as the Visual Basic engine used for these features is separate from the macro scripting engine.[9] Microsoft has released patches to try to address each issue. Ensure KB3191938 which blocks Outlook Visual Basic and displays a malicious code warning, KB4011091 which disables custom forms by default, and KB4011162 which removes the legacy Home Page feature, are applied to systems.[10]"
+          }
+        ]
+      },
+      {
+        "technique": "Pre-OS Boot",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1046",
+            "name": "Boot Integrity",
+            "description": "Use Trusted Platform Module technology and a secure or trusted boot process to prevent system integrity from being compromised. Check the integrity of the existing BIOS or EFI to determine if it is vulnerable to modification. [2] [3]"
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Prevent access to file shares, remote access to systems, unnecessary services. Mechanisms to limit access may include use of network concentrators, RDP gateways, etc."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Ensure proper permissions are in place to help prevent adversary access to privileged accounts necessary to perform these actions"
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Patch the BIOS and EFI as necessary."
+          }
+        ]
+      },
+      {
+        "technique": "Scheduled Task/Job",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for permission weaknesses in scheduled tasks that could be used to escalate privileges. [4]"
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Configure settings for scheduled tasks to force tasks to run under the context of the authenticated account instead of allowing them to run as SYSTEM. The associated Registry key is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\SubmitControl. The setting can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > Security Options: Domain Controller: Allow server operators to schedule tasks, set to disabled. [5]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Configure the Increase Scheduling Priority option to only allow the Administrators group the rights to schedule a priority process. This can be can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Increase scheduling priority. [6]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict access by setting directory and file permissions that are not specific to users or privileged accounts."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create scheduled tasks on remote systems."
+          }
+        ]
+      },
+      {
+        "technique": "Server Software Component",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Regularly check component software on critical services that adversaries may target for persistence to verify the integrity of the systems and identify if unexpected changes have been made."
+          },
+          {
+            "id": "M1046",
+            "name": "Boot Integrity",
+            "description": "Enabling secure boot allows validation of software and drivers during initial system boot."
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Ensure all application component binaries are signed by the correct application developers."
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Consider disabling software components from servers when possible to prevent abuse by adversaries.[2]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Do not allow administrator accounts that have permissions to add component software on these services to be used for day-to-day operations that may expose them to potential adversaries on unprivileged systems."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Consider using Group Policy to configure and block modifications to service and other critical server parameters in the Registry.[3]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Enforce the principle of least privilege by limiting privileges of user accounts so only authorized accounts can modify and/or add server software components.[4]"
+          }
+        ]
+      },
+      {
+        "technique": "Software Extensions",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Ensure extensions that are installed are the intended ones, as many malicious extensions may masquerade as legitimate ones."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Set an extension allow or deny list as appropriate for your security policy."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Only install extensions from trusted sources that can be verified."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Ensure operating systems and software are using the most current version."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Train users to minimize extension use, and to only install trusted extensions."
+          }
+        ]
+      },
+      {
+        "technique": "Traffic Signaling",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable Wake-on-LAN if it is not needed within an environment."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Mitigation of some variants of this technique could be achieved through the use of stateful firewalls, depending upon how it is implemented."
+          }
+        ]
+      },
+      {
+        "technique": "Valid Accounts",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Use conditional access policies to block logins from non-compliant devices or from outside defined organization IP ranges.[94]"
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Disable legacy authentication, which does not support MFA, and require the use of modern authentication protocols instead."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Ensure that applications do not store sensitive data or credentials insecurely. (e.g. plaintext credentials in code, published credentials in repositories, or credentials in public cloud storage)."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Implement multi-factor authentication (MFA) across all account types, including default, local, domain, and cloud accounts, to prevent unauthorized access, even if credentials are compromised. MFA provides a critical layer of security by requiring multiple forms of verification beyond just a password. This measure significantly reduces the risk of adversaries abusing valid accounts to gain initial access, escalate privileges, maintain persistence, or evade defenses within your network."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Applications and appliances that utilize default username and password should be changed immediately after the installation, and before deployment to a production environment.[95] When possible, applications that use SSH keys should be updated periodically and properly secured.Policies should minimize (if not eliminate) reuse of passwords between different user accounts, especially employees using the same credentials for personal accounts that may not be defended by enterprise security resources."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [3] [96] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not been authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [97]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Regularly audit user accounts for activity and deactivate or remove any that are no longer needed."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Applications may send push notifications to verify a login as a form of multi-factor authentication (MFA). Train users to only accept valid push notifications and to report suspicious push notifications."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "techniques": [
+      {
+        "technique": "Abuse Elevation Control Mechanism",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Check for common UAC bypass weaknesses on Windows systems to be aware of the risk posture and address issues where appropriate.[7]"
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "System settings can prevent applications from running that haven't been downloaded from legitimate repositories which may help mitigate some of these issues. Not allowing unsigned applications from being run may also mitigate some risk."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Applications with known vulnerabilities or known shell escapes should not have the setuid or setgid bits set to reduce potential damage if an application is compromised. Additionally, the number of programs with setuid or setgid bits set should be minimized across a system. Ensuring that the sudo tty_tickets setting is enabled will prevent this leakage across tty sessions."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Remove users from the local administrator group on systems.By requiring a password, even if an adversary can get terminal access, they must know the password to run anything in the sudoers file. Setting the timestamp_timeout to 0 will require the user to input their password every time sudo is executed."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "The sudoers file should be strictly edited such that passwords are always required and that users can't spawn risky processes as users with higher privilege."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk."
+          },
+          {
+            "id": "M1052",
+            "name": "User Account Control",
+            "description": "Although UAC bypass techniques exist, it is still prudent to use the highest enforcement level for UAC when possible and mitigate bypass opportunities that exist with techniques such as DLL."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit the privileges of cloud accounts to assume, create, or impersonate additional roles, policies, and permissions to only those required. Where just-in-time access is enabled, consider requiring manual approval for temporary elevation of privileges."
+          }
+        ]
+      },
+      {
+        "technique": "Access Token Manipulation",
+        "mitigations": [
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit permissions so that users and user groups cannot create tokens. This setting should be defined for the local system account only. GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Create a token object. [29] Also define who can create a process level token to only the local and network service through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Replace a process level token.[30]Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas.[31]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "An adversary must already have administrator level access on the local system to make full use of this technique; be sure to restrict users and accounts to the least privileges they require."
+          }
+        ]
+      },
+      {
+        "technique": "Account Manipulation",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Remove unnecessary and potentially abusable authentication and authorization mechanisms where possible."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication for user and privileged accounts."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Configure access controls and firewalls to limit access to critical systems and domain controllers. Most cloud environments support separate virtual private cloud (VPC) instances that enable further segmentation of cloud systems."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Protect domain controllers by ensuring proper security configuration for critical servers to limit access by potentially unnecessary protocols and services, such as SMB file sharing."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Do not allow domain administrator accounts to be used for day-to-day operations that may expose them to potential adversaries on unprivileged systems."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict access to potentially sensitive files that deal with authentication and/or authorization."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that low-privileged user accounts do not have permissions to modify accounts or account-related policies."
+          }
+        ]
+      },
+      {
+        "technique": "Boot or Logon Autostart Execution",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Boot or Logon Initialization Scripts",
+        "mitigations": [
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict write access to logon scripts to specific administrators."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys for logon scripts that may lead to persistence."
+          }
+        ]
+      },
+      {
+        "technique": "Create or Modify System Process",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Use auditing tools capable of detecting privilege and service abuse opportunities on systems within an enterprise and correct them."
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent an application from writing a signed vulnerable driver to the system.[10] On Windows 10 and 11, enable Microsoft Vulnerable Driver Blocklist to assist in hardening against third party-developed drivers.[11]"
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Enforce registration and execution of only legitimately signed service drivers where possible."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Restrict software installation to trusted repositories only and be cautious of orphaned software packages."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Ensure that Driver Signature Enforcement is enabled to restrict unsigned drivers from being installed."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict read/write access to system-level process files to only select privileged users who have a legitimate need to manage system services."
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Where possible, consider enforcing the use of container services in rootless mode to limit the possibility of privilege escalation or malicious effects on the host running the container."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with system-level process changes and service configurations."
+          }
+        ]
+      },
+      {
+        "technique": "Domain or Tenant Policy Modification",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Identify and correct GPO permissions abuse opportunities (ex: GPO modification privileges) using auditing tools such as BloodHound (version 1.5.1 and later)[6]."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Use least privilege and protect administrative access to the Domain Controller and Active Directory Federation Services (AD FS) server. Do not create service accounts with administrative privileges."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Consider implementing WMI and security filtering to further tailor which users and computers a GPO will apply to.[2][7][8]"
+          }
+        ]
+      },
+      {
+        "technique": "Event Triggered Execution",
+        "mitigations": [
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk."
+          }
+        ]
+      },
+      {
+        "technique": "Hijack Execution Flow",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "When possible, include hash values in manifest files to help prevent side-loading of malicious libraries.[11]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Use auditing tools capable of detecting hijacking opportunities on systems within an enterprise and correct them. Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for hijacking weaknesses.[12]Use the program sxstrace.exe that is included with Windows along with manual inspection to check manifest files for side-loading vulnerabilities in software.Find and eliminate path interception weaknesses in program configuration files, scripts, the PATH environment variable, services, and in shortcuts by surrounding PATH variables with quotation marks when functions allow for them. Be aware of the search order Windows uses for executing or loading binaries and use fully qualified paths wherever appropriate.Clean up old Windows Registry keys when software is uninstalled to avoid keys with no associated legitimate binaries. Periodically search for and correct or report path interception weaknesses on systems that may have been introduced using custom or available tools that report software using insecure path configurations.[13][14][15]"
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Some endpoint security solutions can be configured to block some types of behaviors related to process injection/memory tampering based on common sequences of indicators (ex: execution of specific API functions)."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Adversaries may use new payloads to execute this technique. Identify and block potentially malicious software executed through hijacking by using application control solutions also capable of blocking libraries loaded by legitimate software."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Install software in write-protected locations. Set directory access controls to prevent file writes to the search paths for applications, both in the folders where applications are run from and the standard library folders."
+          },
+          {
+            "id": "M1044",
+            "name": "Restrict Library Loading",
+            "description": "Disallow loading of remote DLLs. This is included by default in Windows Server 2012+ and is available by patch for XP+ and Server 2003+.Enable Safe DLL Search Mode to force search for system DLLs in directories with greater restrictions (e.g. %SYSTEMROOT%)to be used before local directory DLLs (e.g. a user's home directory)The Safe DLL Search Mode can be enabled via Group Policy at Computer Configuration > [Policies] > Administrative Templates > MSS (Legacy): MSS: (SafeDllSearchMode) Enable Safe DLL search mode. The associated Windows Registry key for this is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\SafeDLLSearchMode[16][17]"
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys for system components that may lead to privilege escalation."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Update software regularly to include patches that fix DLL side-loading vulnerabilities."
+          },
+          {
+            "id": "M1052",
+            "name": "User Account Control",
+            "description": "Turn off UAC's privilege elevation for standard users [HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System] to automatically deny elevation requests, add: \"ConsentPromptBehaviorUser\"=dword:00000000. Consider enabling installer detection for all users by adding: \"EnableInstallerDetection\"=dword:00000001. This will prompt for a password for installation and also log the attempt. To disable installer detection, instead add: \"EnableInstallerDetection\"=dword:00000000. This may prevent potential elevation of privileges through exploitation during the process of UAC detecting the installer, but will allow the installation process to continue without being logged. [18]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with service changes and service binary target path locations. Deny execution from user directories such as file download directories and temp directories where able.Ensure that proper permissions and directory access control are set to deny users the ability to write files to the top-level directory C: and system directories, such as C:\\Windows\\, to reduce places where malicious files could be placed for execution."
+          }
+        ]
+      },
+      {
+        "technique": "Process Injection",
+        "mitigations": [
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Some endpoint security solutions can be configured to block some types of process injection based on common sequences of behavior that occur during the injection process. For example, on Windows 10, Attack Surface Reduction (ASR) rules may prevent Office applications from code injection. [98]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Utilize Yama (ex: /proc/sys/kernel/yama/ptrace_scope) to mitigate ptrace based process injection by restricting the use of ptrace to privileged users only. Other mitigation controls involve the deployment of security kernel modules that provide advanced access control and process restrictions such as SELinux, grsecurity, and AppArmor."
+          }
+        ]
+      },
+      {
+        "technique": "Scheduled Task/Job",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for permission weaknesses in scheduled tasks that could be used to escalate privileges. [4]"
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Configure settings for scheduled tasks to force tasks to run under the context of the authenticated account instead of allowing them to run as SYSTEM. The associated Registry key is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\SubmitControl. The setting can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > Security Options: Domain Controller: Allow server operators to schedule tasks, set to disabled. [5]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Configure the Increase Scheduling Priority option to only allow the Administrators group the rights to schedule a priority process. This can be can be configured through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Increase scheduling priority. [6]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict access by setting directory and file permissions that are not specific to users or privileged accounts."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and remediate Privilege Escalation vectors so only authorized administrators can create scheduled tasks on remote systems."
+          }
+        ]
+      },
+      {
+        "technique": "Valid Accounts",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Use conditional access policies to block logins from non-compliant devices or from outside defined organization IP ranges.[94]"
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Disable legacy authentication, which does not support MFA, and require the use of modern authentication protocols instead."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Ensure that applications do not store sensitive data or credentials insecurely. (e.g. plaintext credentials in code, published credentials in repositories, or credentials in public cloud storage)."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Implement multi-factor authentication (MFA) across all account types, including default, local, domain, and cloud accounts, to prevent unauthorized access, even if credentials are compromised. MFA provides a critical layer of security by requiring multiple forms of verification beyond just a password. This measure significantly reduces the risk of adversaries abusing valid accounts to gain initial access, escalate privileges, maintain persistence, or evade defenses within your network."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Applications and appliances that utilize default username and password should be changed immediately after the installation, and before deployment to a production environment.[95] When possible, applications that use SSH keys should be updated periodically and properly secured.Policies should minimize (if not eliminate) reuse of passwords between different user accounts, especially employees using the same credentials for personal accounts that may not be defended by enterprise security resources."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [3] [96] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not been authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [97]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Regularly audit user accounts for activity and deactivate or remove any that are no longer needed."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Applications may send push notifications to verify a login as a form of multi-factor authentication (MFA). Train users to only accept valid push notifications and to report suspicious push notifications."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Defense Evasion",
+    "techniques": [
+      {
+        "technique": "Abuse Elevation Control Mechanism",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Check for common UAC bypass weaknesses on Windows systems to be aware of the risk posture and address issues where appropriate.[7]"
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "System settings can prevent applications from running that haven't been downloaded from legitimate repositories which may help mitigate some of these issues. Not allowing unsigned applications from being run may also mitigate some risk."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Applications with known vulnerabilities or known shell escapes should not have the setuid or setgid bits set to reduce potential damage if an application is compromised. Additionally, the number of programs with setuid or setgid bits set should be minimized across a system. Ensuring that the sudo tty_tickets setting is enabled will prevent this leakage across tty sessions."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Remove users from the local administrator group on systems.By requiring a password, even if an adversary can get terminal access, they must know the password to run anything in the sudoers file. Setting the timestamp_timeout to 0 will require the user to input their password every time sudo is executed."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "The sudoers file should be strictly edited such that passwords are always required and that users can't spawn risky processes as users with higher privilege."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk."
+          },
+          {
+            "id": "M1052",
+            "name": "User Account Control",
+            "description": "Although UAC bypass techniques exist, it is still prudent to use the highest enforcement level for UAC when possible and mitigate bypass opportunities that exist with techniques such as DLL."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit the privileges of cloud accounts to assume, create, or impersonate additional roles, policies, and permissions to only those required. Where just-in-time access is enabled, consider requiring manual approval for temporary elevation of privileges."
+          }
+        ]
+      },
+      {
+        "technique": "Access Token Manipulation",
+        "mitigations": [
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit permissions so that users and user groups cannot create tokens. This setting should be defined for the local system account only. GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Create a token object. [29] Also define who can create a process level token to only the local and network service through GPO: Computer Configuration > [Policies] > Windows Settings > Security Settings > Local Policies > User Rights Assignment: Replace a process level token.[30]Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas.[31]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "An adversary must already have administrator level access on the local system to make full use of this technique; be sure to restrict users and accounts to the least privileges they require."
+          }
+        ]
+      },
+      {
+        "technique": "Domain or Tenant Policy Modification",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Identify and correct GPO permissions abuse opportunities (ex: GPO modification privileges) using auditing tools such as BloodHound (version 1.5.1 and later)[6]."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Use least privilege and protect administrative access to the Domain Controller and Active Directory Federation Services (AD FS) server. Do not create service accounts with administrative privileges."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Consider implementing WMI and security filtering to further tailor which users and computers a GPO will apply to.[2][7][8]"
+          }
+        ]
+      },
+      {
+        "technique": "Execution Guardrails",
+        "mitigations": [
+          {
+            "id": "M1055",
+            "name": "Do Not Mitigate",
+            "description": "Execution Guardrails likely should not be mitigated with preventative controls because it may protect unintended targets from being compromised. If targeted, efforts should be focused on preventing adversary tools from running earlier in the chain of activity and on identifying subsequent malicious behavior if compromised."
+          }
+        ]
+      },
+      {
+        "technique": "File and Directory Permissions Modification",
+        "mitigations": [
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Ensure critical system files as well as those known to be abused by adversaries have restrictive permissions and are owned by an appropriately privileged account, especially if access is not required by users nor will inhibit system functionality."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Applying more restrictive permissions to files and directories could prevent adversaries from modifying their access control lists. Additionally, ensure that user settings regarding local and remote symbolic links are properly set or disabled where unneeded.[9]"
+          }
+        ]
+      },
+      {
+        "technique": "Hide Artifacts",
+        "mitigations": [
+          {
+            "id": "M1049",
+            "name": "Antivirus/Antimalware",
+            "description": "Review and audit file/folder exclusions, and limit scope of exclusions to only what is required where possible.[11]"
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Application developers should consider limiting the requirements for custom or otherwise difficult to manage file/folder exclusions. Where possible, install applications to trusted system folder paths that are already protected by restricted file and directory permissions."
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Periodically audit virtual machines for abnormalities."
+          },
+          {
+            "id": "M1033",
+            "name": "Limit Software Installation",
+            "description": "Restrict the installation of software that may be abused to create hidden desktops, such as hVNC, to user groups that require it."
+          }
+        ]
+      },
+      {
+        "technique": "Hijack Execution Flow",
+        "mitigations": [
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "When possible, include hash values in manifest files to help prevent side-loading of malicious libraries.[11]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Use auditing tools capable of detecting hijacking opportunities on systems within an enterprise and correct them. Toolkits like the PowerSploit framework contain PowerUp modules that can be used to explore systems for hijacking weaknesses.[12]Use the program sxstrace.exe that is included with Windows along with manual inspection to check manifest files for side-loading vulnerabilities in software.Find and eliminate path interception weaknesses in program configuration files, scripts, the PATH environment variable, services, and in shortcuts by surrounding PATH variables with quotation marks when functions allow for them. Be aware of the search order Windows uses for executing or loading binaries and use fully qualified paths wherever appropriate.Clean up old Windows Registry keys when software is uninstalled to avoid keys with no associated legitimate binaries. Periodically search for and correct or report path interception weaknesses on systems that may have been introduced using custom or available tools that report software using insecure path configurations.[13][14][15]"
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Some endpoint security solutions can be configured to block some types of behaviors related to process injection/memory tampering based on common sequences of indicators (ex: execution of specific API functions)."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Adversaries may use new payloads to execute this technique. Identify and block potentially malicious software executed through hijacking by using application control solutions also capable of blocking libraries loaded by legitimate software."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Install software in write-protected locations. Set directory access controls to prevent file writes to the search paths for applications, both in the folders where applications are run from and the standard library folders."
+          },
+          {
+            "id": "M1044",
+            "name": "Restrict Library Loading",
+            "description": "Disallow loading of remote DLLs. This is included by default in Windows Server 2012+ and is available by patch for XP+ and Server 2003+.Enable Safe DLL Search Mode to force search for system DLLs in directories with greater restrictions (e.g. %SYSTEMROOT%)to be used before local directory DLLs (e.g. a user's home directory)The Safe DLL Search Mode can be enabled via Group Policy at Computer Configuration > [Policies] > Administrative Templates > MSS (Legacy): MSS: (SafeDllSearchMode) Enable Safe DLL search mode. The associated Windows Registry key for this is located at HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\SafeDLLSearchMode[16][17]"
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys for system components that may lead to privilege escalation."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Update software regularly to include patches that fix DLL side-loading vulnerabilities."
+          },
+          {
+            "id": "M1052",
+            "name": "User Account Control",
+            "description": "Turn off UAC's privilege elevation for standard users [HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System] to automatically deny elevation requests, add: \"ConsentPromptBehaviorUser\"=dword:00000000. Consider enabling installer detection for all users by adding: \"EnableInstallerDetection\"=dword:00000001. This will prompt for a password for installation and also log the attempt. To disable installer detection, instead add: \"EnableInstallerDetection\"=dword:00000000. This may prevent potential elevation of privileges through exploitation during the process of UAC detecting the installer, but will allow the installation process to continue without being logged. [18]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit privileges of user accounts and groups so that only authorized administrators can interact with service changes and service binary target path locations. Deny execution from user directories such as file download directories and temp directories where able.Ensure that proper permissions and directory access control are set to deny users the ability to write files to the top-level directory C: and system directories, such as C:\\Windows\\, to reduce places where malicious files could be placed for execution."
+          }
+        ]
+      },
+      {
+        "technique": "Impair Defenses",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Routinely check account role permissions to ensure only expected users and roles have permission to modify defensive tools and settings. Periodically verify that tools such as EDRs are functioning as expected."
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Consider removing previous versions of tools that are unnecessary to the environment when possible."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Use application control where appropriate, especially regarding the execution of tools outside of the organization's security policies (such as rootkit removal tools) that have been abused to impair system defenses. Ensure that only approved security applications are used and running on enterprise systems."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Ensure proper process and file permissions are in place to prevent adversaries from disabling or interfering with security/logging services."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper Registry permissions are in place to prevent adversaries from disabling or interfering with security/logging services."
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Consider implementing policies on internal web servers, such HTTP Strict Transport Security, that enforce the use of HTTPS/network traffic encryption to prevent insecure connections.[8]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure proper user permissions are in place to prevent adversaries from disabling or interfering with security/logging services."
+          }
+        ]
+      },
+      {
+        "technique": "Indicator Removal",
+        "mitigations": [
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Obfuscate/encrypt event files locally and in transit to avoid giving feedback to an adversary."
+          },
+          {
+            "id": "M1029",
+            "name": "Remote Data Storage",
+            "description": "Automatically forward events to a log server or data repository to prevent conditions in which the adversary can locate and manipulate data on the local system. When possible, minimize time delay on event reporting to avoid prolonged storage on the local system."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Protect generated event files that are stored locally with proper permissions and authentication and limit opportunities for adversaries to increase privileges by preventing Privilege Escalation opportunities."
+          }
+        ]
+      },
+      {
+        "technique": "Masquerading",
+        "mitigations": [
+          {
+            "id": "M1049",
+            "name": "Antivirus/Antimalware",
+            "description": "Anti-virus can be used to automatically quarantine suspicious files."
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Audit user accounts to ensure that each one has a defined purpose."
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Implement security controls on the endpoint, such as a Host Intrusion Prevention System (HIPS), to identify and prevent execution of potentially malicious files (such as those with mismatching file signatures)."
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Require signed binaries."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Use tools that restrict program execution via application control by attributes other than file name for common operating system utilities that are needed."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Use file system access controls to protect folders such as C:\\Windows\\System32."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Consider defining and enforcing a naming convention for user accounts to more easily spot generic account names that do not fit the typical schema."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Train users not to open email attachments or click unknown links (URLs). Such training fosters more secure habits within your organization and will limit many of the risks."
+          }
+        ]
+      },
+      {
+        "technique": "Modify Authentication Process",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Review authentication logs to ensure that mechanisms such as enforcement of MFA are functioning as intended.Periodically review the hybrid identity solution in use for any discrepancies. For example, review all Pass Through Authentication (PTA) agents in the Azure Management Portal to identify any unwanted or unapproved ones.[6] If ADFS is in use, review DLLs and executable files in the AD FS and Global Assembly Cache directories to ensure that they are signed by Microsoft. Note that in some cases binaries may be catalog-signed, which may cause the file to appear unsigned when viewing file properties.[7]Periodically review for new and unknown network provider DLLs within the Registry (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\<NetworkProviderName>\\NetworkProvider\\ProviderPath). Ensure only valid network provider DLLs are registered. The name of these can be found in the Registry key at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order, and have corresponding service subkey pointing to a DLL at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentC ontrolSet\\Services\\<NetworkProviderName>\\NetworkProvider."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Integrating multi-factor authentication (MFA) as part of organizational policy can greatly reduce the risk of an adversary gaining control of valid credentials that may be used for additional tactics such as initial access, lateral movement, and collecting information. MFA can also be used to restrict access to cloud resources and APIs."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Ensure only valid password filters are registered. Filter DLLs must be present in Windows installation directory (C:\\Windows\\System32\\ by default) of a domain controller and/or local computer with a corresponding entry in HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Notification Packages. Starting in Windows 11 22H2, the EnableMPRNotifications policy can be disabled through Group Policy or through a configuration service provider to prevent Winlogon from sending credentials to network providers.[8]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Ensure that AllowReversiblePasswordEncryption property is set to disabled unless there are application requirements.[9]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [10] [11] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not be authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [12]Limit access to the root account and prevent users from modifying protected components through proper privilege separation (ex SELinux, grsecurity, AppArmor, etc.) and limiting Privilege Escalation opportunities.Limit on-premises accounts with access to the hybrid identity solution in place. For example, limit Azure AD Global Administrator accounts to only those required, and ensure that these are dedicated cloud-only accounts rather than hybrid ones.[7]"
+          },
+          {
+            "id": "M1025",
+            "name": "Privileged Process Integrity",
+            "description": "Enabled features, such as Protected Process Light (PPL), for LSA.[13]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict write access to the /Library/Security/SecurityAgentPlugins directory."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Restrict Registry permissions to disallow the modification of sensitive Registry keys such as HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that proper policies are implemented to dictate the the secure enrollment and deactivation of authentication mechanisms, such as MFA, for user accounts."
+          }
+        ]
+      },
+      {
+        "technique": "Modify Cloud Compute Infrastructure",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Routinely monitor user permissions to ensure only the expected users have the capability to modify cloud compute infrastructure components."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit permissions for creating, deleting, and otherwise altering compute components in accordance with least privilege. Organizations should limit the number of users within the organization with an IAM role that has administrative privileges, strive to reduce all permanent privileged role assignments, and conduct periodic entitlement reviews on IAM users, roles and policies.[1]"
+          }
+        ]
+      },
+      {
+        "technique": "Modify System Image",
+        "mitigations": [
+          {
+            "id": "M1046",
+            "name": "Boot Integrity",
+            "description": "Some vendors of embedded network devices provide cryptographic signing to ensure the integrity of operating system images at boot time. Implement where available, following vendor guidelines. [1]"
+          },
+          {
+            "id": "M1045",
+            "name": "Code Signing",
+            "description": "Many vendors provide digitally signed operating system images to validate the integrity of the software used on their platform. Make use of this feature where possible in order to prevent and/or detect attempts by adversaries to compromise the system image. [2]"
+          },
+          {
+            "id": "M1043",
+            "name": "Credential Access Protection",
+            "description": "Some embedded network devices are capable of storing passwords for local accounts in either plain-text or encrypted formats. Ensure that, where available, local passwords are always encrypted, per vendor recommendations. [3]"
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication for user and privileged accounts. Most embedded network devices support TACACS+ and/or RADIUS. Follow vendor prescribed best practices for hardening access control.[4]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Refer to NIST guidelines when creating password policies. [5]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Restrict administrator accounts to as few individuals as possible, following least privilege principles. Prevent credential overlap across systems of administrator and privileged accounts, particularly between network and non-network platforms, such as servers or endpoints."
+          }
+        ]
+      },
+      {
+        "technique": "Network Boundary Bridging",
+        "mitigations": [
+          {
+            "id": "M1043",
+            "name": "Credential Access Protection",
+            "description": "Some embedded network devices are capable of storing passwords for local accounts in either plain-text or encrypted formats. Ensure that, where available, local passwords are always encrypted, per vendor recommendations.[5]"
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Upon identifying a compromised network device being used to bridge a network boundary, block the malicious packets using an unaffected network device in path, such as a firewall or a router that has not been compromised. Continue to monitor for additional activity and to ensure that the blocks are indeed effective."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication for user and privileged accounts. Most embedded network devices support TACACS+ and/or RADIUS. Follow vendor prescribed best practices for hardening access control.[6]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Refer to NIST guidelines when creating password policies. [7]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Restrict administrator accounts to as few individuals as possible, following least privilege principles. Prevent credential overlap across systems of administrator and privileged accounts, particularly between network and non-network platforms, such as servers or endpoints."
+          }
+        ]
+      },
+      {
+        "technique": "Obfuscated Files or Information",
+        "mitigations": [
+          {
+            "id": "M1049",
+            "name": "Antivirus/Antimalware",
+            "description": "Anti-virus can be used to automatically detect and quarantine suspicious files. Consider utilizing the Antimalware Scan Interface (AMSI) on Windows 10+ to analyze commands after being processed/interpreted. [194]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Consider periodic review of common fileless storage locations (such as the Registry or WMI repository) to potentially identify abnormal and malicious data."
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10+, enable Attack Surface Reduction (ASR) rules to prevent execution of potentially obfuscated payloads. [195]"
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Ensure that a finite amount of ingress points to a software deployment system exist with restricted access for those required to allow and enable newly deployed software."
+          }
+        ]
+      },
+      {
+        "technique": "Pre-OS Boot",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1046",
+            "name": "Boot Integrity",
+            "description": "Use Trusted Platform Module technology and a secure or trusted boot process to prevent system integrity from being compromised. Check the integrity of the existing BIOS or EFI to determine if it is vulnerable to modification. [2] [3]"
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Prevent access to file shares, remote access to systems, unnecessary services. Mechanisms to limit access may include use of network concentrators, RDP gateways, etc."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Ensure proper permissions are in place to help prevent adversary access to privileged accounts necessary to perform these actions"
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Patch the BIOS and EFI as necessary."
+          }
+        ]
+      },
+      {
+        "technique": "Process Injection",
+        "mitigations": [
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "Some endpoint security solutions can be configured to block some types of process injection based on common sequences of behavior that occur during the injection process. For example, on Windows 10, Attack Surface Reduction (ASR) rules may prevent Office applications from code injection. [98]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Utilize Yama (ex: /proc/sys/kernel/yama/ptrace_scope) to mitigate ptrace based process injection by restricting the use of ptrace to privileged users only. Other mitigation controls involve the deployment of security kernel modules that provide advanced access control and process restrictions such as SELinux, grsecurity, and AppArmor."
+          }
+        ]
+      },
+      {
+        "technique": "Subvert Trust Controls",
+        "mitigations": [
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "System settings can prevent applications from running that haven't been downloaded through the Apple Store (or other legitimate repositories) which can help mitigate some of these issues. Also enable application control solutions such as AppLocker and/or Device Guard to block the loading of malicious content."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Windows Group Policy can be used to manage root certificates and the Flags value of HKLM\\SOFTWARE\\Policies\\Microsoft\\SystemCertificates\\Root\\ProtectedRoots can be set to 1 to prevent non-administrator users from making further root installations into their own HKCU certificate store. [5]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to privileged accounts, including SYSTEM and root."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Ensure proper permissions are set for Registry hives to prevent users from modifying keys related to SIP and trust provider components. Components may still be able to be hijacked to suitable functions already present on disk if malicious modifications to Registry keys are not prevented."
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "HTTP Public Key Pinning (HPKP) is one method to mitigate potential Adversary-in-the-Middle situations where and adversary uses a mis-issued or fraudulent certificate to intercept encrypted communications by enforcing use of an expected certificate. [6]"
+          }
+        ]
+      },
+      {
+        "technique": "System Binary Proxy Execution",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Many native binaries may not be necessary within a given environment."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Consider using application control to prevent execution of binaries that are susceptible to abuse and not required for a given system or network."
+          },
+          {
+            "id": "M1050",
+            "name": "Exploit Protection",
+            "description": "Microsoft's Enhanced Mitigation Experience Toolkit (EMET) Attack Surface Reduction (ASR) feature can be used to block methods of using using trusted binaries to bypass application control."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Use network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Restrict execution of particularly vulnerable binaries to privileged accounts or groups that need to use it to lessen the opportunities for malicious usage."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Restrict use of certain websites, block downloads/attachments, block Javascript, restrict browser extensions, etc."
+          }
+        ]
+      },
+      {
+        "technique": "System Script Proxy Execution",
+        "mitigations": [
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Certain signed scripts that can be used to execute other programs may not be necessary within a given environment. Use application control configured to block execution of these scripts if they are not required for a given system or network to prevent potential misuse by adversaries."
+          }
+        ]
+      },
+      {
+        "technique": "Traffic Signaling",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable Wake-on-LAN if it is not needed within an environment."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Mitigation of some variants of this technique could be achieved through the use of stateful firewalls, depending upon how it is implemented."
+          }
+        ]
+      },
+      {
+        "technique": "Trusted Developer Utilities Proxy Execution",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Specific developer utilities may not be necessary within a given environment and should be removed if not used."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Certain developer utilities should be blocked or restricted if not required."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Consider disabling software installation or execution from the internet via developer utilities."
+          }
+        ]
+      },
+      {
+        "technique": "Use Alternate Authentication Material",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Where possible, consider restricting the use of authentication material outside of expected contexts."
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Configure Active Directory to prevent use of certain techniques; use SID Filtering, etc."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Consider implementing token binding strategies, such as Azure AD token protection or OAuth Proof of Possession, that cryptographically bind a token to a secret. This may prevent the token from being used without knowledge of the secret or possession of the device the token is tied to.[6][7]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Set and enforce secure password policies for accounts."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit credential overlap across systems to prevent the damage of credential compromise and reduce the adversary's ability to perform Lateral Movement between systems."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Enforce the principle of least-privilege. Do not allow a domain user to be in the local administrator group on multiple systems."
+          }
+        ]
+      },
+      {
+        "technique": "Valid Accounts",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Use conditional access policies to block logins from non-compliant devices or from outside defined organization IP ranges.[94]"
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Disable legacy authentication, which does not support MFA, and require the use of modern authentication protocols instead."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Ensure that applications do not store sensitive data or credentials insecurely. (e.g. plaintext credentials in code, published credentials in repositories, or credentials in public cloud storage)."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Implement multi-factor authentication (MFA) across all account types, including default, local, domain, and cloud accounts, to prevent unauthorized access, even if credentials are compromised. MFA provides a critical layer of security by requiring multiple forms of verification beyond just a password. This measure significantly reduces the risk of adversaries abusing valid accounts to gain initial access, escalate privileges, maintain persistence, or evade defenses within your network."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Applications and appliances that utilize default username and password should be changed immediately after the installation, and before deployment to a production environment.[95] When possible, applications that use SSH keys should be updated periodically and properly secured.Policies should minimize (if not eliminate) reuse of passwords between different user accounts, especially employees using the same credentials for personal accounts that may not be defended by enterprise security resources."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [3] [96] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not been authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [97]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Regularly audit user accounts for activity and deactivate or remove any that are no longer needed."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Applications may send push notifications to verify a login as a form of multi-factor authentication (MFA). Train users to only accept valid push notifications and to report suspicious push notifications."
+          }
+        ]
+      },
+      {
+        "technique": "Virtualization/Sandbox Evasion",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Weaken Encryption",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Credential Access",
+    "techniques": [
+      {
+        "technique": "Adversary-in-the-Middle",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable legacy network protocols that may be used to intercept network traffic if applicable, especially those that are not needed within an environment."
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Ensure that all wired and/or wireless traffic is encrypted appropriately. Use best practices for authentication protocols, such as Kerberos, and ensure web traffic that may contain credentials is protected by SSL/TLS."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Use network appliances and host-based security software to block network traffic that is not necessary within the environment, such as legacy protocols that may be leveraged for AiTM conditions."
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Limit access to network infrastructure and resources that can be used to reshape traffic or otherwise produce AiTM conditions."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that can identify traffic patterns indicative of AiTM activity can be used to mitigate activity at the network level."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Network segmentation can be used to isolate infrastructure components that do not require broad network access. This may mitigate, or at least alleviate, the scope of AiTM activity."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Train users to be suspicious about certificate errors. Adversaries may use their own certificates in an attempt to intercept HTTPS traffic. Certificate errors may arise when the application’s certificate does not match the one expected by the host."
+          }
+        ]
+      },
+      {
+        "technique": "Brute Force",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Set account lockout policies after a certain number of failed login attempts to prevent passwords from being guessed. Too strict a policy may create a denial of service condition and render environments un-usable, with all accounts used in the brute force being locked-out. Use conditional access policies to block logins from non-compliant devices or from outside defined organization IP ranges.[31] Consider blocking risky authentication requests, such as those originating from anonymizing services/proxies.[32]"
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication. Where possible, also enable multi-factor authentication on externally facing services."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Refer to NIST guidelines when creating password policies.[33]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Proactively reset accounts that are known to be part of breached credentials either immediately, or after detecting bruteforce attempts."
+          }
+        ]
+      },
+      {
+        "technique": "Credentials from Password Stores",
+        "mitigations": [
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "The password for the user's login keychain can be changed from the user's login password. This increases the complexity for an adversary because they need to know an additional password.Organizations may consider weighing the risk of storing credentials in password stores and web browsers. If system, software, or web browser credential disclosure is a significant concern, technical controls, policy, and user training may be used to prevent storage of credentials in improper locations."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit the number of accounts and services with permission to query information from password stores to only those required. Ensure that accounts and services with permissions to query password stores only have access to the secrets they require."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Perform regular software updates to mitigate exploitation risk."
+          }
+        ]
+      },
+      {
+        "technique": "Forge Web Credentials",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Administrators should perform an audit of all access lists and the permissions they have been granted to access web applications and services. This should be done extensively on all resources in order to establish a baseline, followed up on with periodic audits of new or updated resources. Suspicious accounts/credentials should be investigated and removed.Enable advanced auditing on ADFS. Check the success and failure audit options in the ADFS Management snap-in. Enable Audit Application Generated events on the AD FS farm via Group Policy Object.[7]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Restrict permissions and access to the AD FS server to only originate from privileged access workstations.[7]"
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Configure browsers/applications to regularly delete persistent web credentials (such as cookies)."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that user accounts with administrative rights follow best practices, including use of privileged access workstations, Just in Time/Just Enough Administration (JIT/JEA), and strong authentication. Reduce the number of users that are members of highly privileged Directory Roles.[6] In AWS environments, prohibit users from calling the sts:GetFederationToken API unless explicitly required.[8]"
+          }
+        ]
+      },
+      {
+        "technique": "Input Capture",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Modify Authentication Process",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Review authentication logs to ensure that mechanisms such as enforcement of MFA are functioning as intended.Periodically review the hybrid identity solution in use for any discrepancies. For example, review all Pass Through Authentication (PTA) agents in the Azure Management Portal to identify any unwanted or unapproved ones.[6] If ADFS is in use, review DLLs and executable files in the AD FS and Global Assembly Cache directories to ensure that they are signed by Microsoft. Note that in some cases binaries may be catalog-signed, which may cause the file to appear unsigned when viewing file properties.[7]Periodically review for new and unknown network provider DLLs within the Registry (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\<NetworkProviderName>\\NetworkProvider\\ProviderPath). Ensure only valid network provider DLLs are registered. The name of these can be found in the Registry key at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order, and have corresponding service subkey pointing to a DLL at HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentC ontrolSet\\Services\\<NetworkProviderName>\\NetworkProvider."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Integrating multi-factor authentication (MFA) as part of organizational policy can greatly reduce the risk of an adversary gaining control of valid credentials that may be used for additional tactics such as initial access, lateral movement, and collecting information. MFA can also be used to restrict access to cloud resources and APIs."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Ensure only valid password filters are registered. Filter DLLs must be present in Windows installation directory (C:\\Windows\\System32\\ by default) of a domain controller and/or local computer with a corresponding entry in HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Notification Packages. Starting in Windows 11 22H2, the EnableMPRNotifications policy can be disabled through Group Policy or through a configuration service provider to prevent Winlogon from sending credentials to network providers.[8]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Ensure that AllowReversiblePasswordEncryption property is set to disabled unless there are application requirements.[9]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Audit domain and local accounts as well as their permission levels routinely to look for situations that could allow an adversary to gain wide access by obtaining credentials of a privileged account. [10] [11] These audits should also include if default accounts have been enabled, or if new local accounts are created that have not be authorized. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers. [12]Limit access to the root account and prevent users from modifying protected components through proper privilege separation (ex SELinux, grsecurity, AppArmor, etc.) and limiting Privilege Escalation opportunities.Limit on-premises accounts with access to the hybrid identity solution in place. For example, limit Azure AD Global Administrator accounts to only those required, and ensure that these are dedicated cloud-only accounts rather than hybrid ones.[7]"
+          },
+          {
+            "id": "M1025",
+            "name": "Privileged Process Integrity",
+            "description": "Enabled features, such as Protected Process Light (PPL), for LSA.[13]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict write access to the /Library/Security/SecurityAgentPlugins directory."
+          },
+          {
+            "id": "M1024",
+            "name": "Restrict Registry Permissions",
+            "description": "Restrict Registry permissions to disallow the modification of sensitive Registry keys such as HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Ensure that proper policies are implemented to dictate the the secure enrollment and deactivation of authentication mechanisms, such as MFA, for user accounts."
+          }
+        ]
+      },
+      {
+        "technique": "OS Credential Dumping",
+        "mitigations": [
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Manage the access control list for \"Replicating Directory Changes All\" and other permissions associated with domain controller replication. [25] [26] Consider adding users to the \"Protected Users\" Active Directory security group. This can help limit the caching of users' plaintext credentials.[27]"
+          },
+          {
+            "id": "M1040",
+            "name": "Behavior Prevention on Endpoint",
+            "description": "On Windows 10, enable Attack Surface Reduction (ASR) rules to secure LSASS and prevent credential stealing. [28]"
+          },
+          {
+            "id": "M1043",
+            "name": "Credential Access Protection",
+            "description": "With Windows 10, Microsoft implemented new protections called Credential Guard to protect the LSA secrets that can be used to obtain credentials through forms of credential dumping. It is not configured by default and has hardware and firmware system requirements. [29] It also does not protect against all forms of credential dumping. [30]"
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Ensure Domain Controller backups are properly secured."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Consider disabling or restricting NTLM.[31] Consider disabling WDigest authentication.[32]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Ensure that local administrator accounts have complex, unique passwords across all systems on the network."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Windows:Do not put user or admin domain accounts in the local administrator groups across systems unless they are tightly controlled, as this is often equivalent to having a local administrator account with the same password on all systems. Follow best practices for design and administration of an enterprise network to limit privileged account use across administrative tiers.[33]Linux:Scraping the passwords from memory requires root privileges. Follow best practices in restricting access to privileged accounts to avoid hostile programs from accessing such sensitive regions of memory."
+          },
+          {
+            "id": "M1025",
+            "name": "Privileged Process Integrity",
+            "description": "On Windows 8.1 and Windows Server 2012 R2, enable Protected Process Light for LSA.[34]"
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Limit credential overlap across accounts and systems by training users and administrators not to use the same password for multiple accounts."
+          }
+        ]
+      },
+      {
+        "technique": "Steal or Forge Kerberos Tickets",
+        "mitigations": [
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "For containing the impact of a previously generated golden ticket, reset the built-in KRBTGT account password twice, which will invalidate any existing golden tickets that have been created with the KRBTGT hash and other Kerberos tickets derived from it. For each domain, change the KRBTGT account password once, force replication, and then change the password a second time. Consider rotating the KRBTGT account password every 180 days.[4]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1043",
+            "name": "Credential Access Protection",
+            "description": "On Linux systems, protect resources with Security Enhanced Linux (SELinux) by defining entry points, process types, and file labels.[5]"
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Enable AES Kerberos encryption (or another stronger encryption algorithm), rather than RC4, where possible.[6]"
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Ensure strong password length (ideally 25+ characters) and complexity for service accounts and that these passwords periodically expire.[6] Also consider using Group Managed Service Accounts or another third party product such as password vaulting.[6]"
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit domain admin account permissions to domain controllers and limited servers. Delegate other admin functions to separate accounts.Limit service accounts to minimal required privileges, including membership in privileged groups such as Domain Administrators.[6]"
+          }
+        ]
+      },
+      {
+        "technique": "Unsecured Credentials",
+        "mitigations": [
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Remove vulnerable Group Policy Preferences.[8]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Preemptively search for files containing passwords or other credentials and take actions to reduce the exposure risk when found."
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "When possible, store keys on separate cryptographic hardware instead of on the local system."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Limit access to the Instance Metadata API. A properly configured Web Application Firewall (WAF) may help prevent external adversaries from exploiting Server-side Request Forgery (SSRF) attacks that allow access to the Cloud Instance Metadata API.[9]"
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Limit network access to sensitive services, such as the Instance Metadata API."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "There are multiple methods of preventing a user's command history from being flushed to their .bash_history file, including use of the following commands:set +o history and set -o history to start logging again;unset HISTFILE being added to a user's .bash_rc file; andln -s /dev/null ~/.bash_history to write commands to /dev/nullinstead."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Use strong passphrases for private keys to make cracking difficult. Do not store credentials within the Registry. Establish an organizational policy that prohibits password storage in files."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "If it is necessary that software must store credentials in the Registry, then ensure the associated accounts have limited permissions so they cannot be abused if obtained by an adversary."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Restrict file shares to specific directories with access only to necessary users."
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Apply patch KB2962486 which prevents credentials from being stored in GPPs.[10][11]"
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Ensure that developers and system administrators are aware of the risk associated with having plaintext passwords in software configuration files that may be left on endpoint systems or servers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Discovery",
+    "techniques": [
+      {
+        "technique": "Account Discovery",
+        "mitigations": [
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Prevent administrator accounts from being enumerated when an application is elevating through UAC since it can lead to the disclosure of account names. The Registry key is located HKLM\\ SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\CredUI\\EnumerateAdministrators. It can be disabled through GPO: Computer Configuration > [Policies] > Administrative Templates > Windows Components > Credential User Interface: E numerate administrator accounts on elevation. [12]"
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Manage the creation, modification, use, and permissions associated to user accounts."
+          }
+        ]
+      },
+      {
+        "technique": "Permission Groups Discovery",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Software Discovery",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "System Location Discovery",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "System Network Configuration Discovery",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Virtualization/Sandbox Evasion",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Lateral Movement",
+    "techniques": [
+      {
+        "technique": "Remote Service Session Hijacking",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable the remote service (ex: SSH, RDP, etc.) if it is unnecessary."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Enable firewall rules to block unnecessary traffic between network security zones within a network."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Set and enforce secure password policies for accounts."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Do not allow remote access to services as a privileged account unless necessary."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit remote user permissions if remote access is necessary."
+          }
+        ]
+      },
+      {
+        "technique": "Remote Services",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "If remote services, such as the ability to make direct connections to cloud virtual machines, are not required, disable these connection types where feasible. On ESXi servers, consider enabling lockdown mode, which disables direct access to an ESXi host and requires that the host be managed remotely using vCenter.[15][16]"
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Prevent unnecessary remote access to file shares, hypervisors, sensitive systems, etc. Mechanisms to limit access may include use of network concentrators, RDP gateways, etc.[17]"
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use multi-factor authentication on remote service logons where possible."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Do not reuse local administrator account passwords across systems. Ensure password complexity and uniqueness such that the passwords cannot be cracked or guessed."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Limit the accounts that may use remote services. Limit the permissions for accounts that are at higher risk of compromise; for example, configure SSH so users can only run specific programs."
+          }
+        ]
+      },
+      {
+        "technique": "Use Alternate Authentication Material",
+        "mitigations": [
+          {
+            "id": "M1036",
+            "name": "Account Use Policies",
+            "description": "Where possible, consider restricting the use of authentication material outside of expected contexts."
+          },
+          {
+            "id": "M1015",
+            "name": "Active Directory Configuration",
+            "description": "Configure Active Directory to prevent use of certain techniques; use SID Filtering, etc."
+          },
+          {
+            "id": "M1013",
+            "name": "Application Developer Guidance",
+            "description": "Consider implementing token binding strategies, such as Azure AD token protection or OAuth Proof of Possession, that cryptographically bind a token to a secret. This may prevent the token from being used without knowledge of the secret or possession of the device the token is tied to.[6][7]"
+          },
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Perform audits or scans of systems, permissions, insecure software, insecure configurations, etc. to identify potential weaknesses."
+          },
+          {
+            "id": "M1027",
+            "name": "Password Policies",
+            "description": "Set and enforce secure password policies for accounts."
+          },
+          {
+            "id": "M1026",
+            "name": "Privileged Account Management",
+            "description": "Limit credential overlap across systems to prevent the damage of credential compromise and reduce the adversary's ability to perform Lateral Movement between systems."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Enforce the principle of least-privilege. Do not allow a domain user to be in the local administrator group on multiple systems."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Collection",
+    "techniques": [
+      {
+        "technique": "Adversary-in-the-Middle",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable legacy network protocols that may be used to intercept network traffic if applicable, especially those that are not needed within an environment."
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Ensure that all wired and/or wireless traffic is encrypted appropriately. Use best practices for authentication protocols, such as Kerberos, and ensure web traffic that may contain credentials is protected by SSL/TLS."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Use network appliances and host-based security software to block network traffic that is not necessary within the environment, such as legacy protocols that may be leveraged for AiTM conditions."
+          },
+          {
+            "id": "M1035",
+            "name": "Limit Access to Resource Over Network",
+            "description": "Limit access to network infrastructure and resources that can be used to reshape traffic or otherwise produce AiTM conditions."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that can identify traffic patterns indicative of AiTM activity can be used to mitigate activity at the network level."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Network segmentation can be used to isolate infrastructure components that do not require broad network access. This may mitigate, or at least alleviate, the scope of AiTM activity."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Train users to be suspicious about certificate errors. Adversaries may use their own certificates in an attempt to intercept HTTPS traffic. Certificate errors may arise when the application’s certificate does not match the one expected by the host."
+          }
+        ]
+      },
+      {
+        "technique": "Archive Collected Data",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "System scans can be performed to identify unauthorized archival utilities."
+          }
+        ]
+      },
+      {
+        "technique": "Data from Configuration Repository",
+        "mitigations": [
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Configure SNMPv3 to use the highest level of security (authPriv) available.[2]"
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Apply extended ACLs to block unauthorized protocols outside the trusted network.[2]"
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Configure intrusion prevention devices to detect SNMP queries and commands from unauthorized sources.[1]"
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Segregate SNMP traffic on a separate management network.[2]"
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Allowlist MIB objects and implement SNMP views.[3]"
+          },
+          {
+            "id": "M1051",
+            "name": "Update Software",
+            "description": "Keep system images and software updated and migrate to SNMPv3.[4]"
+          }
+        ]
+      },
+      {
+        "technique": "Data from Information Repositories",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Consider periodic review of accounts and privileges for critical and sensitive repositories. Ensure that repositories such as cloud-hosted databases are not unintentionally exposed to the public, and that security groups assigned to them permit only necessary and authorized hosts.[9]"
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Encrypt data stored at rest in databases."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use two or more pieces of evidence to authenticate to a system; such as username and password in addition to a token from a physical smart card or token generator."
+          },
+          {
+            "id": "M1060",
+            "name": "Out-of-Band Communications Channel",
+            "description": "Create plans for leveraging a secure out-of-band communications channel, rather than existing in-network chat applications, in case of a security incident.[10]"
+          },
+          {
+            "id": "M1054",
+            "name": "Software Configuration",
+            "description": "Consider implementing data retention policies to automate periodically archiving and/or deleting data that is no longer needed."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Enforce the principle of least-privilege. Consider implementing access control mechanisms that include both authentication and authorization."
+          },
+          {
+            "id": "M1017",
+            "name": "User Training",
+            "description": "Develop and publish policies that define acceptable information to be stored in repositories."
+          }
+        ]
+      },
+      {
+        "technique": "Data Staged",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Email Collection",
+        "mitigations": [
+          {
+            "id": "M1047",
+            "name": "Audit",
+            "description": "Enterprise email solutions have monitoring mechanisms that may include the ability to audit auto-forwarding rules on a regular basis.In an Exchange environment, Administrators can use Get-InboxRule to discover and remove potentially malicious auto-forwarding rules.[12]"
+          },
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Use of encryption provides an added layer of security to sensitive information sent over email. Encryption using public key cryptography requires the adversary to obtain the private certificate along with an encryption key to decrypt messages."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Use of multi-factor authentication for public-facing webmail servers is a recommended best practice to minimize the usefulness of usernames and passwords to adversaries."
+          },
+          {
+            "id": "M1060",
+            "name": "Out-of-Band Communications Channel",
+            "description": "Use secure out-of-band authentication methods to verify the authenticity of critical actions initiated via email, such as password resets, financial transactions, or access requests. For highly sensitive information, utilize out-of-band communication channels instead of relying solely on email to prevent adversaries from collecting data through compromised email accounts.[1]"
+          }
+        ]
+      },
+      {
+        "technique": "Input Capture",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Command and Control",
+    "techniques": [
+      {
+        "technique": "Application Layer Protocol",
+        "mitigations": [
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Use network appliances to filter ingress or egress traffic and perform protocol-based filtering. Configure software on endpoints to filter network traffic."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level."
+          }
+        ]
+      },
+      {
+        "technique": "Data Encoding",
+        "mitigations": [
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. [9]"
+          }
+        ]
+      },
+      {
+        "technique": "Data Obfuscation",
+        "mitigations": [
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level."
+          }
+        ]
+      },
+      {
+        "technique": "Dynamic Resolution",
+        "mitigations": [
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Malware researchers can reverse engineer malware variants that use dynamic resolution and determine future C2 infrastructure that the malware will attempt to contact, but this is a time and resource intensive effort.[24][25]"
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "In some cases a local DNS sinkhole may be used to help prevent behaviors associated with dynamic resolution."
+          }
+        ]
+      },
+      {
+        "technique": "Encrypted Channel",
+        "mitigations": [
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level."
+          },
+          {
+            "id": "M1020",
+            "name": "SSL/TLS Inspection",
+            "description": "SSL/TLS inspection can be used to see the contents of encrypted sessions to look for network-based indicators of malware communication protocols."
+          }
+        ]
+      },
+      {
+        "technique": "Proxy",
+        "mitigations": [
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Traffic to known anonymity networks and C2 infrastructure can be blocked through the use of network allow and block lists. It should be noted that this kind of blocking may be circumvented by other techniques like Domain Fronting."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific C2 protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools. [88]"
+          },
+          {
+            "id": "M1020",
+            "name": "SSL/TLS Inspection",
+            "description": "If it is possible to inspect HTTPS traffic, the captures can be analyzed for connections that appear to be domain fronting."
+          }
+        ]
+      },
+      {
+        "technique": "Remote Access Tools",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Consider disabling unnecessary remote connection functionality, including both unapproved software installations and specific features built into supported applications."
+          },
+          {
+            "id": "M1038",
+            "name": "Execution Prevention",
+            "description": "Use application control to mitigate installation and use of unapproved software that can be used for remote access."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Properly configure firewalls, application firewalls, and proxies to limit outgoing traffic to sites and services used by remote access software."
+          },
+          {
+            "id": "M1034",
+            "name": "Limit Hardware Installation",
+            "description": "Block the use of IP-based KVM devices within the network if they are not required."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures may be able to prevent traffic to remote access services."
+          }
+        ]
+      },
+      {
+        "technique": "Traffic Signaling",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable Wake-on-LAN if it is not needed within an environment."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Mitigation of some variants of this technique could be achieved through the use of stateful firewalls, depending upon how it is implemented."
+          }
+        ]
+      },
+      {
+        "technique": "Web Service",
+        "mitigations": [
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Web proxies can be used to enforce external network communication policy that prevents use of unauthorized external services."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Exfiltration",
+    "techniques": [
+      {
+        "technique": "Automated Exfiltration",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      },
+      {
+        "technique": "Exfiltration Over Alternative Protocol",
+        "mitigations": [
+          {
+            "id": "M1057",
+            "name": "Data Loss Prevention",
+            "description": "Data loss prevention can detect and block sensitive data being uploaded via web browsers."
+          },
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Enforce proxies and use dedicated servers for services such as DNS and only allow those systems to communicate over respective ports/protocols, instead of all systems within a network. Cloud service providers support IP-based restrictions when accessing cloud resources. Consider using IP allowlisting along with user account management to ensure that data access is restricted not only to valid users but only from expected IP ranges to mitigate the use of stolen credentials to access data."
+          },
+          {
+            "id": "M1031",
+            "name": "Network Intrusion Prevention",
+            "description": "Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Follow best practices for network firewall configurations to allow only necessary ports and traffic to enter and exit the network.[12]"
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Use access control lists on cloud storage systems and objects."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "Configure user permissions groups and roles for access to cloud storage.[13] Implement strict Identity and Access Management (IAM) controls to prevent access to storage solutions except for the applications, users, and services that require access.[14] Ensure that temporary access tokens are issued rather than permanent credentials, especially when access is being granted to entities outside of the internal security boundary.[15]"
+          }
+        ]
+      },
+      {
+        "technique": "Exfiltration Over Other Network Medium",
+        "mitigations": [
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable WiFi connection, modem, cellular data connection, Bluetooth, or another radio frequency (RF) channel in local computer security settings or by group policy if it is not needed within an environment."
+          },
+          {
+            "id": "M1028",
+            "name": "Operating System Configuration",
+            "description": "Prevent the creation of new network adapters where possible.[1][2]"
+          }
+        ]
+      },
+      {
+        "technique": "Exfiltration Over Physical Medium",
+        "mitigations": [
+          {
+            "id": "M1057",
+            "name": "Data Loss Prevention",
+            "description": "Data loss prevention can detect and block sensitive data being copied to physical mediums."
+          },
+          {
+            "id": "M1042",
+            "name": "Disable or Remove Feature or Program",
+            "description": "Disable Autorun if it is unnecessary. [1] Disallow or restrict removable media at an organizational policy level if they are not required for business operations. [2]"
+          },
+          {
+            "id": "M1034",
+            "name": "Limit Hardware Installation",
+            "description": "Limit the use of USB devices and removable media within a network."
+          }
+        ]
+      },
+      {
+        "technique": "Exfiltration Over Web Service",
+        "mitigations": [
+          {
+            "id": "M1057",
+            "name": "Data Loss Prevention",
+            "description": "Data loss prevention can be detect and block sensitive data being uploaded to web services via web browsers."
+          },
+          {
+            "id": "M1021",
+            "name": "Restrict Web-Based Content",
+            "description": "Web proxies can be used to enforce an external network communication policy that prevents use of unauthorized external services."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tactic": "Impact",
+    "techniques": [
+      {
+        "technique": "Data Destruction",
+        "mitigations": [
+          {
+            "id": "M1053",
+            "name": "Data Backup",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.[51] Ensure backups are stored off system and protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery."
+          },
+          {
+            "id": "M1032",
+            "name": "Multi-factor Authentication",
+            "description": "Implement multi-factor authentication (MFA) delete for cloud storage resources, such as AWS S3 buckets, to prevent unauthorized deletion of critical data and infrastructure. MFA delete requires additional authentication steps, making it significantly more difficult for adversaries to destroy data without proper credentials. This additional security layer helps protect against the impact of data destruction in cloud environments by ensuring that only authenticated actions can irreversibly delete storage or machine images."
+          },
+          {
+            "id": "M1018",
+            "name": "User Account Management",
+            "description": "In cloud environments, limit permissions to modify cloud bucket lifecycle policies (e.g., PutLifecycleConfiguration in AWS) to only those accounts that require it. In AWS environments, consider using Service Control policies to limit the use of the PutBucketLifecycle API call."
+          }
+        ]
+      },
+      {
+        "technique": "Data Manipulation",
+        "mitigations": [
+          {
+            "id": "M1041",
+            "name": "Encrypt Sensitive Information",
+            "description": "Consider encrypting important information to reduce an adversary’s ability to perform tailored data modifications."
+          },
+          {
+            "id": "M1030",
+            "name": "Network Segmentation",
+            "description": "Identify critical business and system processes that may be targeted by adversaries and work to isolate and secure those systems against unauthorized access and tampering."
+          },
+          {
+            "id": "M1029",
+            "name": "Remote Data Storage",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.[2] Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and manipulate backups."
+          },
+          {
+            "id": "M1022",
+            "name": "Restrict File and Directory Permissions",
+            "description": "Ensure least privilege principles are applied to important information resources to reduce exposure to data manipulation risk."
+          }
+        ]
+      },
+      {
+        "technique": "Defacement",
+        "mitigations": [
+          {
+            "id": "M1053",
+            "name": "Data Backup",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.[1] Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery."
+          }
+        ]
+      },
+      {
+        "technique": "Disk Wipe",
+        "mitigations": [
+          {
+            "id": "M1053",
+            "name": "Data Backup",
+            "description": "Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data.[3] Ensure backups are stored off system and is protected from common methods adversaries may use to gain access and destroy the backups to prevent recovery."
+          }
+        ]
+      },
+      {
+        "technique": "Endpoint Denial of Service",
+        "mitigations": [
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "Leverage services provided by Content Delivery Networks (CDN) or providers specializing in DoS mitigations to filter traffic upstream from services.[10] Filter boundary traffic by blocking source addresses sourcing the attack, blocking ports that are being targeted, or blocking protocols being used for transport. To defend against SYN floods, enable SYN Cookies."
+          }
+        ]
+      },
+      {
+        "technique": "Network Denial of Service",
+        "mitigations": [
+          {
+            "id": "M1037",
+            "name": "Filter Network Traffic",
+            "description": "When flood volumes exceed the capacity of the network connection being targeted, it is typically necessary to intercept the incoming traffic upstream to filter out the attack traffic from the legitimate traffic. Such defenses can be provided by the hosting Internet Service Provider (ISP) or by a 3rd party such as a Content Delivery Network (CDN) or providers specializing in DoS mitigations.[7]Depending on flood volume, on-premises filtering may be possible by blocking source addresses sourcing the attack, blocking ports that are being targeted, or blocking protocols being used for transport.[7]As immediate response may require rapid engagement of 3rd parties, analyze the risk associated to critical resources being affected by Network DoS attacks and create a disaster recovery plan/business continuity plan to respond to incidents.[7]"
+          }
+        ]
+      },
+      {
+        "technique": "Resource Hijacking",
+        "mitigations": [
+          {
+            "description": "This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features."
+          }
+        ]
+      }
+    ]
+  }
+]
